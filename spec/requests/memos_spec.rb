@@ -1,10 +1,10 @@
 require 'rails_helper'
 
-RSpec.describe "Memos", type: :request do
-  describe "GET /memos" do
-    it "works! (now write some real specs)" do
-      get memos_path
-      expect(response).to have_http_status(200)
-    end
+RSpec.describe Memo, type: :request do
+  it do
+    p "======================test start"
+    get "/memos"
+    expect(true).to be_truthy
+    p "======================test end"
   end
 end
